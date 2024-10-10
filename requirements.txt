@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-﻿openai==0.28.1
+openai==0.28.1
 websockets
 streamlit
 streamlit-chat
