@@ -5,7 +5,7 @@ import websockets
 
 # Função assíncrona para conectar e enviar mensagens via WebSocket
 async def connect_and_chat(user_message):
-    uri = "ws://paine-chatbot-production.up.railway.app/ws/{user_id}"
+    uri = "wss://paine-chatbot-production.up.railway.app/ws/{user_id}"
     async with websockets.connect(uri) as websocket:
         await websocket.send(user_message)
         response = await websocket.recv()
